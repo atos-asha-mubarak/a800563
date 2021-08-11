@@ -1,0 +1,41 @@
+site_name: AL2.0-cockroachDB
+repo_url: https://github.com/USA-CES-CROSSCLOUD/AL2.0-cockroachDB
+site_author: Tommy Wiffler
+copyright: Atos 2021
+
+theme: material
+
+plugins:
+  - search
+  - with-pdf
+  - pdf-export:
+      verbose: true
+      media_type: print
+      enabled_if_env: ENABLE_PDF_EXPORT
+
+markdown_extensions:
+  - attr_list
+
+nav:
+  - Overview:
+    - Intended Audience: overview/audience.md
+    - App Purpose: overview/purpose.md
+  - Architecture:
+    - High Level: arch/high-level.md
+    - Low Level: arch/low-level.md
+  - Installation:
+    - Prerequisites: install/prereqs.md
+    - Pre Config: install/pre-config.md
+    - Deployment: install/deploy.md
+    - Post Config: install/post-config.md
+  - Backup and Restore Data: 
+    - Overview: backup-restore/overview.md
+    - Prerequisites: backup-restore/prereqs.md
+    - Backup options: backup-restore/backup.md
+    - Restore options:  backup-restore/restore.md
+  - Life Cycle Management:
+    - Operations: lcm/ops.md
+    - Upgrading: lcm/upgrade.md
+    - Rollback: lcm/rollback.md
+    - Troubleshooting: lcm/troubleshoot.md
+    - Support Contacts: lcm/contacts.md
