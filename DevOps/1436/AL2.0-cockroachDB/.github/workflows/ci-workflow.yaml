@@ -18,7 +18,7 @@ name: CI pipeline
 on:
   push:
     branches:
-    - dev
+    - CCFS_1436
 
 env:
   DEV_PROJECT_ID: ${{ secrets.GCP_DEV_PROJECT_ID }}
